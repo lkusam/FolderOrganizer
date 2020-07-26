@@ -1,0 +1,29 @@
+{
+  "name": "folderorganizer",
+  "version": "1.0.0",
+  "description": "This Project will organize the files in a folder based on the extensions",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "pkg . --out-path=./bin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lkusam/FolderOrganizer.git"
+  },
+  "keywords": [
+    "organizer",
+    "folder"
+  ],
+  "author": "Lakshma Kusam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lkusam/FolderOrganizer/issues"
+  },
+  "homepage": "https://github.com/lkusam/FolderOrganizer#readme",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
