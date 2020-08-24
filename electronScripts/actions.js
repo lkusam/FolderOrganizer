@@ -3,14 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
   M.AutoInit();
 });
 
+document.getElementById("organize").addEventListener("click", organize);
+
 function organize() {
   let fileControl = document.getElementById("filePath");
   let capitalSelect = document.getElementById("capitalizeSelect");
 
   // values
-  let filePath = fileControl.value;
-  let capitalSelected = capitalSelect.value || true;
-  if (filePath) {
+  let filesList = fileControl.files;
+  let capitalSelected = capitalSelect.checked || true;
+
+  if (filePath.Length > 0) {
     getFiles(filePath, capitalSelected);
   }
 }

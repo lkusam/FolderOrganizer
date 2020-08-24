@@ -9,7 +9,7 @@
     "start": "node index.js",
     "publish": "pkg . -c -t=host --out-path=./bin",
     "build": "electron .",
-    "dev": "nodemon --watch . --exec \"electron . --debug\""
+    "dev": "nodemon --watch . --exec \"electron .\""
   },
   "repository": {
     "type": "git",
