@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" viewport="1.0" />
+    <title>Welcome to Folder Organizer</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the folder organizer..</h1>
+      <div>
+        <div class="row">
+          <span class="teal-text">
+            Please select a folder that needs to organized
+          </span>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="file-field input-field">
+              <div class="btn">
+                <span>Select a Folder</span>
+                <input
+                  id="filePath"
+                  type="file"
+                  webkitdirectory
+                  mozdirectory
+                  directory
+                  msdirectory
+                />
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            Do you want to capitalize your folder
+            <div class="switch">
+              <label>
+                NO
+                <input type="checkbox" id="capitalizeSelect" checked />
+                <span class="lever"></span>
+                YES
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      We are using node
+      <script>
+        document.write(process.versions.node);
+      </script>
+      , Chrome
+      <script>
+        document.write(process.versions.chrome);
+      </script>
+      , and Electron
+      <script>
+        document.write(process.versions.electron);
+      </script>
+      <div class="row">
+        <input
+          type="button"
+          class="btn"
+          value="Organize"
+          onClick="organize()"
+        />
+      </div>
+    </div>
+
+    <script type="module" src="./electronScripts/actions.js"></script>
+  </body>
+</html>
