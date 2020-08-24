@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link rel="stylesheet" href="./css/index.css" />
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <meta
@@ -16,9 +17,23 @@
     />
   </head>
   <body>
+    <!-- ADDING A OVERLAY FOR THE LOADER -->
+    <div class="overlay center" id="overlay" style="display: none;">
+      <h6 class="white-text" id="loader_text">
+        Please wait we are gathering info..
+      </h6>
+      <div class="progress">
+        <div class="indeterminate"></div>
+      </div>
+    </div>
+
     <div class="container">
       <h1>Welcome to the folder organizer..</h1>
       <div>
+        <div class="row">
+          <div class="green-text hide" id="success"><h3>Successfully Organized your files</h3></div>
+          <div class="red-text hide">Sorry something went wrong</div>
+        </div>
         <div class="row">
           <span class="teal-text">
             Please select a folder that needs to organized

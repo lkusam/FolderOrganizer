@@ -33,12 +33,13 @@ export function getFiles(dirPath, capitalFolderName) {
           console.log("File Copied successfully. Deleting from source...");
           fs.unlinkSync(e.sourcePath);
           console.log("Done Deleting the file");
-        } else console.log(`Copied file doesn't exists. please check manually`);
+        } else
+          console.log(`Copied file doesn't exists. please check manually`);
         console.log("Done copying the file. on to next one");
         console.log("*****************************************");
       });
-    } else
-      console.log("Not a valid path. Please check the Path and try again.");
+    } else alert("Not a valid path. Please check the Path and try again.");
+    console.log("Not a valid path. Please check the Path and try again.");
   } catch (error) {
     console.log(error);
   }

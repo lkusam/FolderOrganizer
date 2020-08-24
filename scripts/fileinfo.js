@@ -1,3 +1,5 @@
+const path = require("path");
+const fs = require("fs");
 export class fileDetails {
   constructor(filePath, capitalize) {
     this.sourcePath = `${filePath.dir}${path.sep}${filePath.base}`;
